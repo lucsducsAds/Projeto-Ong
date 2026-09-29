@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Instituto Viver Melhor - projeto acadêmico em formato SPA.">
+    <title>Instituto Viver Melhor</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-content">
+        <a class="logo" href="#inicio" aria-label="Instituto Viver Melhor - página inicial">
+            <span class="logo-mark" aria-hidden="true">IVM</span>
+            <span>Instituto Viver Melhor</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+            <span class="menu-icon" aria-hidden="true">☰</span>
+            <span class="menu-label">Menu</span>
+        </button>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <ul class="nav-list" id="menu-principal">
+                <li><a href="#inicio" data-route="inicio">Início</a></li>
+                <li class="has-submenu">
+                    <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="submenu-projetos">Projetos</button>
+                    <ul class="submenu" id="submenu-projetos">
+                        <li><a href="#projetos" data-route="projetos">Todos os projetos</a></li>
+                        <li><a href="#projetos" data-route="projetos">Nossas iniciativas</a></li>
+                    </ul>
+                </li>
+                <li><a href="#cadastro" data-route="cadastro">Participe</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <div><strong>Instituto Viver Melhor</strong><p>Solidariedade, inclusão e oportunidades.</p></div>
+        <p>&copy; 2026 Instituto Viver Melhor. Projeto acadêmico.</p>
+    </div>
+</footer>
+
+<div id="formToast" class="toast" role="status" aria-live="polite" aria-atomic="true">
+    <strong>Cadastro validado</strong><br>
+    Seu interesse foi registrado nesta demonstração do projeto.
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+<script src="../js/storage.js"></script>
+<script src="../js/projetos.js"></script>
+<script src="../js/form.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>
