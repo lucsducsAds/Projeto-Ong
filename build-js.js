@@ -30,3 +30,21 @@ for (const arquivo of arquivos) {
 
     console.log(`Minificado: ${arquivo}`);
 }
+
+const indexPath = path.resolve("dist/index.html");
+
+let indexHtml = fs.readFileSync(indexPath, "utf8");
+
+indexHtml = indexHtml.replaceAll("../js/", "js/");
+
+fs.writeFileSync(indexPath, indexHtml, "utf8");
+
+const projetosPath = path.resolve("dist/js/projetos.js");
+
+let projetosJs = fs.readFileSync(projetosPath, "utf8");
+
+projetosJs = projetosJs.replaceAll("../imagens/", "imagens/");
+
+fs.writeFileSync(projetosPath, projetosJs, "utf8");
+
+console.log("Caminhos dos scripts e das imagens ajustados para a produção.");

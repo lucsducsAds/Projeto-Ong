@@ -4,6 +4,7 @@ import path from "path";
 
 export default defineConfig({
     root: "html",
+    base: "/Projeto-Ong/",
 
     plugins: [
         {
