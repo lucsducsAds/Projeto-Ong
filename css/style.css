@@ -956,3 +956,56 @@ textarea.campo-sucesso {
         grid-template-columns: 1fr;
     }
 }
+/* =================================
+   ACESSIBILIDADE — MODO ESCURO
+   ================================= */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --green: #8FB9AD;
+        --green-dark: #B7D4CC;
+        --green-light: #B7D4CC;
+        --green-soft: #263C36;
+
+        --gold: #E8D8B9;
+        --gold-light: #F0E5CF;
+
+        --cream: #1E2524;
+        --white: #121817;
+
+        --ink: #F1F5F3;
+        --muted: #D2DBD7;
+        --border: #53635E;
+
+        --danger: #FF9D91;
+    }
+
+    .button {
+        color: #121817;
+    }
+
+    .button-secondary {
+        background: #121817;
+        color: var(--green);
+    }
+
+    .site-footer {
+        color: #F1F5F3;
+    }
+
+    .site-footer p {
+        color: #D2DBD7;
+    }
+
+    .submenu {
+        background: #121817;
+    }
+
+    input,
+    select,
+    textarea {
+        background: #121817;
+        color: var(--ink);
+        border-color: var(--border);
+    }
+}
