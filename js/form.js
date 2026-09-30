@@ -210,7 +210,7 @@ function prepararFormulario() {
         }
 
         const dados = obterDadosFormulario(form);
-        salvarDados(CHAVE_FORMULARIO, dados);
+        IVM.storage.salvar(CHAVE_FORMULARIO, dados);
 
         status.textContent =
             "Cadastro validado com sucesso. Os dados foram mantidos neste navegador.";

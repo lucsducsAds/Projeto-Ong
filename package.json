@@ -1,0 +1,27 @@
+{
+  "name": "projeto-ong",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node build-js.js",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucsducsAds/Projeto-Ong.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/lucsducsAds/Projeto-Ong/issues"
+  },
+  "homepage": "https://github.com/lucsducsAds/Projeto-Ong#readme",
+  "devDependencies": {
+    "terser": "^5.51.2",
+    "vite": "^8.3.1"
+  }
+}
