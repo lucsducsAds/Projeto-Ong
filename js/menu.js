@@ -34,7 +34,6 @@ function inicializarMenu() {
         });
     }
 
-    // Fecha o menu principal com a tecla Esc
     document.addEventListener("keydown", event => {
         if (event.key === "Escape" && mainNav.classList.contains("is-open")) {
             mainNav.classList.remove("is-open");
